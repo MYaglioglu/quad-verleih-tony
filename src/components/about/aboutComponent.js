@@ -2,19 +2,20 @@ import React from 'react';
 import './aboutComponent.css';
 import logo from '../../assets/img/logo.jpeg';
 import about from '../../assets/img/about.jpeg';
+import logoNoBg from '../../assets/img/logoNoBg.png';
 
 const AboutComponent = () => {
   return (
-    <main className=" bg-gradient-to-b from-gray-100 to-black ">
+    <main className="bg-gradient-to-b from-gray-100 to-black ">
        <div  className="pt--20 relative w-full h-auto ">
         <img className=" object-center object-fill w-full h-[400px]"
-          src={logo}
+          src={logoNoBg}
           alt="Quadverleih Tony"
           priority
         />
       </div>
       <section className="w-full py-12 md:py-24 lg:py-32 ">
-        <div className="container px-4 md:px-6">
+        <div className="px-4 md:px-6">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">Über Quadverleih Tony</h1>
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-start">
             <img
@@ -36,7 +37,7 @@ const AboutComponent = () => {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8 text-white">Warum Quadverleih Tony?</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div className="p-6 flex flex-col items-center text-center space-y-2 bg-white rounded-lg shadow-md">
@@ -68,7 +69,7 @@ const AboutComponent = () => {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32 ">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8 text-white">Unser Team</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
@@ -90,7 +91,7 @@ const AboutComponent = () => {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32 ">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <h2 className="text-3xl font-bold text-white tracking-tighter sm:text-4xl text-center mb-8">Kontaktieren Sie uns</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="p-6 flex flex-col items-center text-center space-y-2 bg-white rounded-lg shadow-md">

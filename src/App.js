@@ -4,6 +4,8 @@ import HeaderComponent from './shared/header/headerComponent';
 import HeroComponent from './components/hero/heroComponent';
 import BannerComponent from './components/banner/bannerComponent';
 import AboutComponent from './components/about/aboutComponent';
+import ContactComponent from './components/contact/contactComponent';
+import FooterComponent from './shared/footer/footerComponent';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <BannerComponent />
       <HeroComponent />
       <AboutComponent />
+      <ContactComponent />
+      <FooterComponent />
     </div>
   );
 }

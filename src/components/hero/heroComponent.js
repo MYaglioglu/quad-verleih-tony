@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './heroComponent.css'; // Stelle sicher, dass diese Datei existiert und korrekt importiert wird
+import logo from './../../assets/img/logo.jpeg'; // Stelle sicher, dass diese Datei existiert und korrekt importiert wird
+import logoNoBg from './../../assets/img/logoNoBg.png'; // Stelle sicher, dass diese Datei existiert und korrekt importiert wird
 
 const images = [
   require('./../../assets/img/preview/gal1.jpeg'),
@@ -41,7 +43,7 @@ export default function HeroComponent() {
           <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
         </div>
       )}
-      <div className="relative w-full max-w-5xl aspect-video shadow-xl rounded-lg overflow-hidden ">
+      <div className="relative w-full mt-12 max-w-5xl aspect-video shadow-xl rounded-lg overflow-hidden ">
         {images.map((src, index) => (
           <img
             key={index} // Verwende den Index als Schlüssel
@@ -53,6 +55,7 @@ export default function HeroComponent() {
           />
         ))}
       </div>
+      
       <div className="flex justify-center mt-6 space-x-3">
         {images.map((_, index) => (
           <button
